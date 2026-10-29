@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your account – Peak Form</title>
+<meta name="description" content="Delete your Peak Form account and personal data.">
+<meta name="theme-color" content="#12181C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 12 L52 52 L12 52 Z" fill="#FFFFFF"/><path d="M32 12 L41 30 L32 30 Z" fill="#0E7C5A"/></svg><span>Peak Form</span></a>
+  <nav class="links" aria-label="Main"><a href="/">Home</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a><a href="/delete-account" aria-current="page">Delete account</a></nav>
+</div></header>
+<main><div class="wrap">
+  <h1>Delete your Peak Form account</h1>
+  <p>You can also do this in the app: <strong>Settings → Delete account</strong>.</p>
+
+  <div class="card">
+    <h3>What is deleted</h3>
+    <p>Your login, profile and sign-up answers, plans, check-ins and photos, workouts, meals, pain reports, chat and calls. This cannot be undone.</p>
+  </div>
+  <div class="card">
+    <h3>What is kept</h3>
+    <p>Your coach keeps a record of your past payments for their accounts (amount, date, plan length), without your name or other personal details. Your coach is told that you deleted your account.</p>
+  </div>
+
+  <h2>Delete now</h2>
+  <p class="muted">Sign in with the email and password you use in the Peak Form app.</p>
+  <form id="del" novalidate>
+    <label>Email<input id="email" type="email" autocomplete="username" required></label>
+    <label>Password<input id="password" type="password" autocomplete="current-password" required></label>
+    <label class="check"><input id="sure" type="checkbox"> I understand my account and data will be deleted and this cannot be undone.</label>
+    <div id="msg" class="notice alert" role="alert" hidden></div>
+    <button class="btn" id="go" type="submit" disabled>Delete my account</button>
+  </form>
+  <div id="done" class="notice ok" role="status" hidden><strong>Your account is deleted.</strong> Your login and personal data have been removed. Thank you for training with Peak Form.</div>
+
+  <h2>Can’t sign in?</h2>
+  <p>Reset your password in the app (“Forgot password?”), or email <a href="mailto:support@peakform.ae?subject=Delete%20my%20account">support@peakform.ae</a> from the email address on your account and ask us to delete it. We confirm it is you, then delete it within <span class="tbc">[30]</span> days.</p>
+</div></main>
+<script src="/config.js"></script>
+<script src="/delete-account.js"></script>
+<footer class="bottom"><div class="wrap">
+  <div><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a><a href="/delete-account">Delete account</a></div>
+  <div>© 2026 Peak Form · <a href="mailto:support@peakform.ae">support@peakform.ae</a></div>
+</div></footer>
+</body>
+</html>
